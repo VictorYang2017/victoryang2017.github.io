@@ -6306,7 +6306,7 @@ nav a:hover {
   width: 10vw; }
 
 .header-logo {
-  width: 9vw;
+  width: 10vw;
   height: 10vh;
   background-image: url("../img/portfolio-logo.png");
   background-position: center center;
@@ -6380,8 +6380,8 @@ nav a:hover {
     margin-right: 10px; }
 
 .logo {
-  width: 9vw;
-  height: 10vh;
+  width: 12vw;
+  height: 12vh;
   background-image: url("../img/portfolio-logo.png");
   background-position: center center;
   background-repeat: no-repeat;
