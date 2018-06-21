@@ -73,10 +73,13 @@ header{
 }
 .primary-logo{
     max-width:500px;
-    padding-top:50px;
+    padding-top:70px;
 }
 .logo{
     animation: flip 18s infinite ease-in-out;
+}
+.logo-flip{
+    animation: hoverflip 1s infinite ease-in-out;
 }
 .logo img{
     width:300px;
@@ -91,7 +94,7 @@ header{
 .projects{
     display: flex;
     justify-content: space-around;
-    margin-top:20px;
+    margin-top:40px;
 }
 .projects h2{
     font-size: 2.1em;
@@ -121,6 +124,15 @@ header{
 @media only screen and (max-width:1620px){
     button{
         font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width:1580px){
+    .project{
+        width: 33%;
+    }
+    button{
+        font-size: 0.8em;
     }
 }
 
@@ -250,3 +262,11 @@ header{
     }
 }
 
+@keyframes hoverflip{
+    from{
+        transform: rotateX(0);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
