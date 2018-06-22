@@ -56,6 +56,7 @@ button, [type="button"], [type="reset"], [type="submit"]{
     cursor: pointer;
     padding:6px 12px;
     background-color:transparent;
+    border-radius: 5px;
 }
 
 .focus{
@@ -94,7 +95,7 @@ header{
 .projects{
     display: flex;
     justify-content: space-around;
-    margin-top:40px;
+    margin-top:70px;
 }
 .projects h2{
     font-size: 2.1em;
@@ -112,9 +113,20 @@ header{
     animation-name: appear;
     animation-duration: 4s;
     padding:20px;
+    border: 10px dashed rgba(255,255,255,0.5);
+    border-radius: 10px;
 }
 
 /* Media query */
+@media only screen and (max-width:1700px){
+    .projects{
+        margin-top:40px;
+    }
+    .project{
+        border: none;
+    }
+}
+
 @media only screen and (max-width:1720px){
     .project{
         width: 33%;
@@ -245,6 +257,7 @@ header{
         margin-bottom: 5px;
     }
 }
+
 
 /* Animation */
 @keyframes appear{
