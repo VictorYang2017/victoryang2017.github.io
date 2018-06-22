@@ -150,6 +150,10 @@ header{
     border-radius: 10px;
 }
 
+.project:hover{
+    border-color: rgba(255,255,255,0.9);
+}
+
 /* Media query */
 @media only screen and (max-width:1700px){
     .projects{
