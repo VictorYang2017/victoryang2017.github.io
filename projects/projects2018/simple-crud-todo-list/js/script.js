@@ -34,7 +34,6 @@ class TodoList {
                                     <div class="del"><i class="fas fa-trash-alt fa-sm"></i></div>
                                 </div>
                             </div>`
-            // sessionStorage.setItem(this.userValue,newListHtml);
             this.htmlBottomContainer.insertAdjacentHTML('afterbegin', newListHtml);
         };
         this.htmlTodoName = document.querySelectorAll('.todo-name');
@@ -95,15 +94,15 @@ class TodoList {
                         evt.path[3].children[0].style.display = 'block';
                         evt.path[3].children[0].value = evt.path[3].classList[2];
                     }else if(evt.path[3].children[0].tagName === 'INPUT'){
-                        this.htmlEditBtn[i].parentNode.parentNode.children[1].innerHTML = this.htmlEditBtn[i].parentNode.parentNode.firstElementChild.value;
-                        this.htmlEditBtn[i].parentNode.parentNode.classList.remove(this.htmlEditBtn[i].parentNode.parentNode.classList[2]);
-                        this.htmlEditBtn[i].parentNode.parentNode.classList.add(this.htmlEditBtn[i].parentNode.parentNode.firstElementChild.value);
+                        const itemParentHtmlClass = this.htmlEditBtn[i].parentNode.parentNode.classList;
+                        const itemParentHtmlValueClass = this.htmlEditBtn[i].parentNode.parentNode.classList[2];
+                        const newItemInputBoxValue = this.htmlEditBtn[i].parentNode.parentNode.firstElementChild.value;
+                        this.htmlEditBtn[i].parentNode.parentNode.children[1].innerHTML = newItemInputBoxValue;
+                        itemParentHtmlClass.remove(itemParentHtmlValueClass);
+                        itemParentHtmlClass.add(newItemInputBoxValue);
                         evt.path[3].children[0].style.display = 'none';
                         evt.path[3].children[1].style.display = 'block';
-
-                        console.log(this.htmlEditBtn[i].parentNode.parentNode.classList);
                         evt.path[3].removeChild(evt.path[3].children[0]);
-
                     }
                 }
             });
