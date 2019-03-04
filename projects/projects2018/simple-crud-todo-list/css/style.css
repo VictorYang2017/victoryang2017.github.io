@@ -76,6 +76,19 @@ p{
     margin-bottom:3px;
 }
 
+.edit-input{
+    border: 2px solid #E26262;
+    outline: none;
+    color:#ffa239;
+    padding:1px 0 0 3px;
+    background-color: #fff4fc;
+    border-radius: 3px;
+    margin-left:3px;
+    font-family: 'Mali', cursive;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
 ::placeholder{
     color: #cdcdcd;
     font-weight: lighter;

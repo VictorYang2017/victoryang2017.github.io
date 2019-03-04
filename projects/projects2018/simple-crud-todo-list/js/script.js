@@ -11,13 +11,7 @@ class TodoList {
     }
 
     init() {
- 
-         this.updateList();
-         this.crossOut();
-         this.removeList();
-        this.addLists()
-        const data = sessionStorage.getItem('asdf');
-        this.htmlBottomContainer.innerHTML = data;
+        this.addLists();
     }
 
     get userValue() {
@@ -92,18 +86,21 @@ class TodoList {
                 evt.preventDefault();
                 evt.stopPropagation();
                 if (evt.target.parentNode === this.htmlEditBtn[i]) {
-                    // console.log(evt.path[3]);
                     const htmlPrevValue = evt.path[3].firstElementChild.textContent;
-                    // console.log(evt.path[3].firstElementChild.tagName);
-                    if(evt.path[3].firstElementChild.tagName === 'DIV'){
+                    if (evt.path[3].firstElementChild.tagName === 'DIV') {
                         const htmlEditInput = document.createElement('input');
+                        const htmlNewIcon = '<i class="fas fa-check"></i>';
                         htmlEditInput.classList.add('edit-input');
+                        htmlEditInput.setAttribute('maxlength', '12');
+                        evt.target.parentNode.innerHTML = htmlNewIcon;
                         evt.path[3].firstElementChild.style.display = 'none';
                         htmlEditInput.value = htmlPrevValue;
-                        evt.path[3].insertBefore(htmlEditInput,evt.path[3].firstElementChild);
-                    }else if(evt.path[3].firstElementChild.tagName === 'INPUT'){
+                        evt.path[3].insertBefore(htmlEditInput, evt.path[3].firstElementChild);
+                    } else if (evt.path[3].firstElementChild.tagName === 'INPUT') {
                         const htmlNewValue = document.querySelector('.edit-input').value;
+                        const htmlNewEditIcon = '<i class="fas fa-edit fa-sm"></i>';
                         evt.path[3].removeChild(evt.path[3].firstElementChild);
+                        evt.target.parentNode.innerHTML = htmlNewEditIcon;
                         evt.path[3].firstElementChild.style.display = 'block';
                         evt.path[3].firstElementChild.innerHTML = htmlNewValue;
                     }
