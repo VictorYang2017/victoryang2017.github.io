@@ -86,23 +86,24 @@ class TodoList {
                 evt.preventDefault();
                 evt.stopPropagation();
                 if (evt.target.parentNode === this.htmlEditBtn[i]) {
-                    const htmlPrevValue = evt.path[3].firstElementChild.textContent;
-                    if (evt.path[3].firstElementChild.tagName === 'DIV') {
+                    if (evt.path[3].children[0].tagName === 'DIV') {
                         const htmlEditInput = document.createElement('input');
-                        const htmlNewIcon = '<i class="fas fa-check"></i>';
-                        htmlEditInput.classList.add('edit-input');
+                        htmlEditInput.className = `edit-input`;
                         htmlEditInput.setAttribute('maxlength', '12');
-                        evt.target.parentNode.innerHTML = htmlNewIcon;
-                        evt.path[3].firstElementChild.style.display = 'none';
-                        htmlEditInput.value = htmlPrevValue;
                         evt.path[3].insertBefore(htmlEditInput, evt.path[3].firstElementChild);
-                    } else if (evt.path[3].firstElementChild.tagName === 'INPUT') {
-                        const htmlNewValue = document.querySelector('.edit-input').value;
-                        const htmlNewEditIcon = '<i class="fas fa-edit fa-sm"></i>';
-                        evt.path[3].removeChild(evt.path[3].firstElementChild);
-                        evt.target.parentNode.innerHTML = htmlNewEditIcon;
-                        evt.path[3].firstElementChild.style.display = 'block';
-                        evt.path[3].firstElementChild.innerHTML = htmlNewValue;
+                        evt.path[3].children[1].style.display = 'none';
+                        evt.path[3].children[0].style.display = 'block';
+                        evt.path[3].children[0].value = evt.path[3].classList[2];
+                    }else if(evt.path[3].children[0].tagName === 'INPUT'){
+                        this.htmlEditBtn[i].parentNode.parentNode.children[1].innerHTML = this.htmlEditBtn[i].parentNode.parentNode.firstElementChild.value;
+                        this.htmlEditBtn[i].parentNode.parentNode.classList.remove(this.htmlEditBtn[i].parentNode.parentNode.classList[2]);
+                        this.htmlEditBtn[i].parentNode.parentNode.classList.add(this.htmlEditBtn[i].parentNode.parentNode.firstElementChild.value);
+                        evt.path[3].children[0].style.display = 'none';
+                        evt.path[3].children[1].style.display = 'block';
+
+                        console.log(this.htmlEditBtn[i].parentNode.parentNode.classList);
+                        evt.path[3].removeChild(evt.path[3].children[0]);
+
                     }
                 }
             });
