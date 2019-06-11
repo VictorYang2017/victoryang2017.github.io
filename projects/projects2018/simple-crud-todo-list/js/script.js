@@ -1,8 +1,9 @@
 class TodoList {
     constructor(itemListClass, dateClass) {
         this.itemListClass = `.${itemListClass}`;
-        this.dateClass = `.${dateClass}`;
+        this.dateClass = `${dateClass}`;
         this.htmlInput = document.querySelector('.middle-container--input-box');
+        this.htmlDateH5 = document.querySelector(this.dateClass);
         this.htmlBottomContainer = document.querySelector(this.itemListClass);
         this.addBtn = document.querySelector('.middle-container--add-btn');
         this.htmlTodoName = '';
@@ -11,6 +12,7 @@ class TodoList {
     }
 
     init() {
+        this.showDate();
         this.addLists();
     }
 
@@ -85,24 +87,25 @@ class TodoList {
                 evt.preventDefault();
                 evt.stopPropagation();
                 if (evt.target.parentNode === this.htmlEditBtn[i]) {
-                    if (evt.path[3].children[0].tagName === 'DIV') {
+                    const indivListItem = this.htmlEditBtn[i].parentNode.parentNode;
+                    if (indivListItem.children[0].tagName === 'DIV') {
                         const htmlEditInput = document.createElement('input');
                         htmlEditInput.className = `edit-input`;
                         htmlEditInput.setAttribute('maxlength', '12');
-                        evt.path[3].insertBefore(htmlEditInput, evt.path[3].firstElementChild);
-                        evt.path[3].children[1].style.display = 'none';
-                        evt.path[3].children[0].style.display = 'block';
-                        evt.path[3].children[0].value = evt.path[3].classList[2];
-                    }else if(evt.path[3].children[0].tagName === 'INPUT'){
+                        indivListItem.insertBefore(htmlEditInput, indivListItem.firstElementChild);
+                        indivListItem.children[1].style.display = 'none';
+                        indivListItem.children[0].style.display = 'block';
+                        indivListItem.children[0].value = indivListItem.classList[2];
+                    }else if(indivListItem.children[0].tagName === 'INPUT'){
                         const itemParentHtmlClass = this.htmlEditBtn[i].parentNode.parentNode.classList;
                         const itemParentHtmlValueClass = this.htmlEditBtn[i].parentNode.parentNode.classList[2];
                         const newItemInputBoxValue = this.htmlEditBtn[i].parentNode.parentNode.firstElementChild.value;
                         this.htmlEditBtn[i].parentNode.parentNode.children[1].innerHTML = newItemInputBoxValue;
                         itemParentHtmlClass.remove(itemParentHtmlValueClass);
                         itemParentHtmlClass.add(newItemInputBoxValue);
-                        evt.path[3].children[0].style.display = 'none';
-                        evt.path[3].children[1].style.display = 'block';
-                        evt.path[3].removeChild(evt.path[3].children[0]);
+                        indivListItem.children[0].style.display = 'none';
+                        indivListItem.children[1].style.display = 'block';
+                        indivListItem.removeChild(indivListItem.children[0]);
                     }
                 }
             });
@@ -115,10 +118,19 @@ class TodoList {
                 evt.preventDefault();
                 evt.stopPropagation();
                 if (evt.target.parentNode === this.htmlDelBtn[i]) {
-                    evt.path[2].parentNode.remove();
+                    console.log(this.htmlDelBtn[i].parentNode)
+                    this.htmlDelBtn[i].parentNode.parentNode.remove();
                 }
             });
         }
+    }
+
+    showDate(){
+        const dateLib = new Date();
+        const currentYear = dateLib.getFullYear('yyyy');
+        const currentMonth = dateLib.getMonth() + 1;
+        const currentDate = dateLib.getDate();
+        this.htmlDateH5.innerHTML = `${currentDate}/${currentMonth}/${currentYear}`;
     }
 }
 
