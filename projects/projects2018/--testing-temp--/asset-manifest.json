@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/projects/projects2018/--testing-temp--/static/css/main.b19f6d9b.chunk.css",
+    "main.css": "/projects/projects2018/--testing-temp--/static/css/main.1ccb2ae4.chunk.css",
     "main.js": "/projects/projects2018/--testing-temp--/static/js/main.7dc38f1a.chunk.js",
     "runtime-main.js": "/projects/projects2018/--testing-temp--/static/js/runtime-main.db7f8100.js",
     "static/js/2.812f48d4.chunk.js": "/projects/projects2018/--testing-temp--/static/js/2.812f48d4.chunk.js",
     "index.html": "/projects/projects2018/--testing-temp--/index.html",
-    "precache-manifest.2f430301ba70a032683358daa124a98e.js": "/projects/projects2018/--testing-temp--/precache-manifest.2f430301ba70a032683358daa124a98e.js",
+    "precache-manifest.b26001d3cfc0bc66f3e6cfc2a3740aed.js": "/projects/projects2018/--testing-temp--/precache-manifest.b26001d3cfc0bc66f3e6cfc2a3740aed.js",
     "service-worker.js": "/projects/projects2018/--testing-temp--/service-worker.js",
     "static/js/2.812f48d4.chunk.js.LICENSE.txt": "/projects/projects2018/--testing-temp--/static/js/2.812f48d4.chunk.js.LICENSE.txt",
     "static/media/index.css": "/projects/projects2018/--testing-temp--/static/media/background-pattern.0f2e1551.png",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.db7f8100.js",
     "static/js/2.812f48d4.chunk.js",
-    "static/css/main.b19f6d9b.chunk.css",
+    "static/css/main.1ccb2ae4.chunk.css",
     "static/js/main.7dc38f1a.chunk.js"
   ]
 }
