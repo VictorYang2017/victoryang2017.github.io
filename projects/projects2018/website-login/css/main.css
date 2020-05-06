@@ -255,6 +255,7 @@ select{
     border-radius: 5px;
     font-family: 'Source Sans Pro', sans-serif;
     text-align-last: center;
+    text-align-last: -webkit-center;
     font-size: 0.9vw;
 }
 
@@ -487,6 +488,18 @@ select #not-a-choice{
 
     .error-msg{
         font-size: 0.9vw;
+    }
+
+    .dropdown-for-animation select{
+        font-size: 1.5vw;
+    }
+
+    .dropdown-intro{
+        font-size: 1.1vw;
+    }
+
+    .button-for-animate{
+        font-size: 1.3vw;
     }
 }
 
