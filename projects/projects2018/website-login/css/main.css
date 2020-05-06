@@ -58,6 +58,7 @@ p:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 
 }
 
@@ -84,6 +85,7 @@ p:hover{
     background: linear-gradient(to left,rgba(236, 233, 230, 0.4), rgba(255,255,255, 0.6));
     box-shadow: 15px 10px 150px 0 #4c4c4c;
     border-radius: 5px;
+    min-width:368px;
     width:50%;
     height:100%;
     display: flex;
@@ -207,6 +209,7 @@ input::placeholder{
 
 .hello-screen-container{
     height:100vh;
+    min-width:500px;
     width:100%;
     margin:auto;
     display:flex;
@@ -441,8 +444,436 @@ select #not-a-choice{
     animation: shackingError 1s;
 }
 
-@media screen and (max-width:1350px) {
+
+/* @media screen and (max-width:1350px) {
     .login-input-container--sign-up{
         font-size: 1.2vw;
+    }
+} */
+
+@media screen and (max-width:1370px) {
+    h3{
+        font-size: 1.5vw;
+    }
+
+    .sign-up-container h3{
+        font-size: 1.2vw;
+    }
+
+    input::placeholder{
+        font-size: 1.1vw;
+    }
+
+    .sign-up-container input::placeholder{
+        font-size: 0.9vw;
+    }
+
+    .gender-options {
+        font-size: 1.2vw;
+    }
+
+    h5{
+        font-size: 1.2vw;
+    }
+
+    .sign-up-container .submit{
+        font-size: 1.1vw;
+    }
+
+    .login-input-container--button{
+        width:64%;
+    }
+
+    .error-msg{
+        font-size: 0.9vw;
+    }
+}
+
+
+
+@media screen and (max-width:1200px) {
+    h3{
+        font-size: 1.7vw;
+    }
+
+    input::placeholder{
+        font-size: 1.2vw;
+    }
+
+    h5{
+        font-size: 1.4vw;
+    }
+
+    .error-msg{
+        font-size: 1vw;
+    }
+
+}
+
+
+@media screen and (max-width:1025px) {
+    h3{
+        font-size: 2vw;
+    }
+
+    .sign-up-container h3{
+        font-size: 1.5vw;
+    }
+
+    input::placeholder{
+        font-size: 1.4vw;
+    }
+
+    .sign-up-container input::placeholder{
+        font-size: 1.3vw;
+    }
+
+    .gender-options {
+        font-size: 1.5vw;
+    }
+
+    h5{
+        font-size: 1.6vw;
+    }
+
+    .sign-up-container .submit{
+        font-size: 1.3vw;
+    }
+
+    .login-input-container--button{
+        width:63%;
+        height: 52px;
+    }
+
+    .login-input-container--sign-up{
+        font-size: 1.4vw;
+    }
+
+    .error-msg{
+        font-size: 1.1vw;
+    }
+
+    .dropdown-for-animation select{
+        width:50%;
+        font-size: 2vw;
+    }
+
+    .dropdown-intro{
+        font-size: 1.7vw;
+    }
+
+    .button-for-animate{
+        width:50%;
+        font-size: 1.8vw;
+    }
+
+    .hello-screen-the-message, .hello-screen-firstname, .hello-screen-lastname{
+        font-size: 5vw;
+    }
+
+    .hello-screen-container h6{
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .input-container{
+        width:80%;
+    }
+
+    .back-button{
+        font-size: 5.5vw;
+    }
+
+    h3{
+        font-size: 2.5vw;
+    }
+
+    .sign-up-container h3{
+        font-size: 2.2vw;
+    }
+
+    input::placeholder{
+        font-size: 1.6vw;
+    }
+
+    .sign-up-container input::placeholder{
+        font-size: 1.8vw;
+    }
+
+    .gender-options {
+        font-size: 1.9vw;
+    }
+
+    h5{
+        font-size: 2.1vw;
+    }
+
+    .sign-up-container .submit{
+        font-size: 1.8vw;
+    }
+
+    .login-input-container--button{
+        width:65%;
+    }
+
+    .login-input-container--sign-up{
+        font-size: 1.8vw;
+    }
+
+    .error-msg{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width:770px){
+    .dropdown-for-animation{
+        margin-top:25px;
+    }
+
+    .dropdown-for-animation select{
+        width:62%;
+        font-size: 2.7vw;
+    }
+
+    .dropdown-intro{
+        font-size: 2vw;
+    }
+
+    .button-for-animate{
+        width:62%;
+        font-size: 2.5vw;
+    }
+
+    .hello-screen-the-message, .hello-screen-firstname, .hello-screen-lastname{
+        font-size: 4.9vw;
+    }
+
+    .hello-screen-container h6{
+        font-size: 2.1vw;
+    }
+}
+
+@media screen and (max-width:650px) {
+
+    h3{
+        font-size: 3.1vw;
+    }
+
+    .sign-up-container h3{
+        font-size: 2.5vw;
+    }
+
+    input::placeholder{
+        font-size: 2vw;
+    }
+
+    .sign-up-container input::placeholder{
+        font-size: 2vw;
+    }
+
+    .gender-options {
+        font-size: 2.3vw;
+    }
+
+    h5{
+        font-size: 2.4vw;
+    }
+
+    .sign-up-container .submit{
+        font-size: 2.3vw;
+    }
+
+    .login-input-container--button{
+        width:63%;
+    }
+
+    .login-input-container--sign-up{
+        font-size: 2vw;
+    }
+
+    .error-msg{
+        font-size: 1.8vw;
+    }
+}
+
+@media screen and (max-width:570px) {
+    h3{
+        font-size: 3.2vw;
+    }
+
+    .sign-up-container h3{
+        font-size: 2.7vw;
+    }
+
+    input::placeholder{
+        font-size: 2.2vw;
+    }
+
+    .sign-up-container input::placeholder{
+        font-size: 2.2vw;
+    }
+
+    .gender-options {
+        font-size: 2.7vw;
+    }
+
+    h5{
+        font-size: 2.6vw;
+    }
+
+    .sign-up-container .submit{
+        font-size: 2.5vw;
+    }
+
+    .login-input-container--sign-up{
+        font-size: 2.1vw;
+    }
+
+    .error-msg{
+        font-size: 1.9vw;
+    }
+
+    .dropdown-for-animation select{
+        width:62%;
+        font-size: 3.2vw;
+    }
+
+    .dropdown-intro{
+        font-size: 2.3vw;
+    }
+
+    .button-for-animate{
+        width:62%;
+        font-size: 2.8vw;
+    }
+
+    .hello-screen-container h6{
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .input-container{
+        width:92%;
+    }
+
+    .back-button{
+        font-size: 7.2vw;
+    }
+
+    .login-input-container--components{
+        width:88%;
+    }
+
+    h3{
+        font-size: 4vw;
+    }
+
+    .sign-up-container h3{
+        font-size: 3.2vw;
+    }
+
+    input::placeholder{
+        font-size: 2.7vw;
+    }
+
+    .sign-up-container input::placeholder{
+        font-size: 2.6vw;
+    }
+
+    .gender-options {
+        font-size: 3vw;
+    }
+
+    h5{
+        font-size: 3.5vw;
+    }
+
+    .sign-up-container .submit{
+        font-size: 2.9vw;
+    }
+
+    .login-input-container--button{
+        width:80%;
+        height:50px;
+    }
+
+    .login-input-container--sign-up{
+        font-size: 2.8vw;
+    }
+
+    .error-msg{
+        font-size: 2.4vw;
+    }
+
+    .hello-screen-the-message, .hello-screen-firstname, .hello-screen-lastname{
+        font-size: 24px;
+    }
+
+    .dropdown-for-animation select{
+        font-size: 15px;
+    }
+
+    .dropdown-intro{
+        font-size: 14px;
+    }
+
+    .button-for-animate{
+        font-size: 15px;
+    }
+
+    .hello-screen-container h6{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #main-container{
+        overflow: auto;
+    }
+
+    .back-button{
+        font-size: 35px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .sign-up-container h3{
+        font-size: 14px;
+    }
+
+    input::placeholder{
+        font-size: 14px;
+    }
+
+    .sign-up-container input::placeholder{
+        font-size: 12px;
+    }
+
+    .gender-options {
+        font-size: 13px;
+    }
+
+    h5{
+        font-size: 16px;
+    }
+
+    .sign-up-container .submit{
+        font-size: 13px;
+    }
+
+    .login-input-container--button{
+        width:78%;
+    }
+
+    .login-input-container--sign-up{
+        font-size: 13px;
+    }
+
+    .error-msg{
+        font-size: 12px;
     }
 }

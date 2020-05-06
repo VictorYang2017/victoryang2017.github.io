@@ -224,13 +224,13 @@ function displaySignUpNow(){
                     <div class="form-username-heading signup-input-heading">
                         <h3>Username</h3>
                     </div>
-                    <input type="text" class="form-username-input form-signup-input clean" name="username" maxlength="10" placeholder="No more than 10 characters">
+                    <input type="text" class="form-username-input form-signup-input clean" name="username" maxlength="10" placeholder="5 to 10 char">
                 </div>
                 <div class="form-password">
                     <div class="form-password-heading signup-input-heading">
                         <h3>Password</h3>
                     </div>
-                    <input type="password" class="form-password-input form-signup-input clean" name="password" maxlength="15" placeholder="No more than 15 charcters">
+                    <input type="password" class="form-password-input form-signup-input clean" name="password" maxlength="15" placeholder="8 to 15 char">
                 </div>
             </div>
         </form>
@@ -415,28 +415,28 @@ function pushInToTheUserDataObject(firstname,lastname,gender,theemail,theusernam
 }
 
 
-$(window).resize(function(){
+// $(window).resize(function(){
  
-    function showMobileNotSupportMessage(){
-        var mobileNotSupportMsg = 
-        `<div class="mobile-not-support">
-            <div class="mobile-not-support--message">
-                <div class="message">Sorry, our site does not support any kind of mobile devices, sorry for the inconvenience</div>
-            </div>
+//     function showMobileNotSupportMessage(){
+//         var mobileNotSupportMsg = 
+//         `<div class="mobile-not-support">
+//             <div class="mobile-not-support--message">
+//                 <div class="message">Sorry, our site does not support any kind of mobile devices, sorry for the inconvenience</div>
+//             </div>
 
-        </div>`
-        var mobileNotSupportContainer = $(".mobile-not-support");
-        if($(window).width() < 1000 || $(window).height() < 500){
-            mainContainerHTML.detach();
-            mainBody.html(mobileNotSupportMsg);
-        }else{
-            mobileNotSupportContainer.remove();
-            mainBody.append(mainContainerHTML);
-            clearOutTheErrorMsgAndInputFieldValue();
-        }
-    }
-    showMobileNotSupportMessage();
-});
+//         </div>`
+//         var mobileNotSupportContainer = $(".mobile-not-support");
+//         if($(window).width() < 1000 || $(window).height() < 500){
+//             mainContainerHTML.detach();
+//             mainBody.html(mobileNotSupportMsg);
+//         }else{
+//             mobileNotSupportContainer.remove();
+//             mainBody.append(mainContainerHTML);
+//             clearOutTheErrorMsgAndInputFieldValue();
+//         }
+//     }
+//     showMobileNotSupportMessage();
+// });
 
 
 
