@@ -58,7 +58,6 @@ p:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: hidden;
 
 }
 
@@ -789,10 +788,6 @@ select #not-a-choice{
 }
 
 @media screen and (max-width:500px) {
-    #main-container{
-        overflow: auto;
-    }
-
     .input-container{
         width:92%;
     }
