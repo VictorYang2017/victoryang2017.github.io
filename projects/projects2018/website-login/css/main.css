@@ -254,8 +254,6 @@ select{
     border:2px solid rgba(35, 40, 67, 0.5);
     border-radius: 5px;
     font-family: 'Source Sans Pro', sans-serif;
-    text-align-last: center;
-    text-align-last: -webkit-center;
     font-size: 0.9vw;
 }
 
@@ -348,7 +346,7 @@ select #not-a-choice{
 
 .first-name-last-name, .form-username-password{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 15px;
 
 }
@@ -357,11 +355,11 @@ select #not-a-choice{
     margin:auto;
 }
 .first-name, .form-username{
-    width:40%;
+    width:43.5%;
     text-align: center;
 }
 .last-name, .form-password{
-    width:40%;
+    width:43.5%;
     text-align: center;
 }
 .male-female{
@@ -579,6 +577,10 @@ select #not-a-choice{
     .button-for-animate{
         width:50%;
         font-size: 1.8vw;
+    }
+
+    .hello-screen-the-message{
+        display: block;
     }
 
     .hello-screen-the-message, .hello-screen-firstname, .hello-screen-lastname{
@@ -845,7 +847,7 @@ select #not-a-choice{
     }
 
     .hello-screen-the-message, .hello-screen-firstname, .hello-screen-lastname{
-        font-size: 24px;
+        font-size: 35px;
     }
 
     .dropdown-for-animation select{
@@ -861,7 +863,7 @@ select #not-a-choice{
     }
 
     .hello-screen-container h6{
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
