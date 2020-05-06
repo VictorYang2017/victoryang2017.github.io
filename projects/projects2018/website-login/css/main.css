@@ -349,6 +349,7 @@ select #not-a-choice{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 15px;
+
 }
 .signup-input-heading{
     width:80%;
@@ -655,6 +656,25 @@ select #not-a-choice{
 }
 
 @media screen and (max-width:650px) {
+    .main-section{
+        height:550px;
+    }
+
+    .sign-up-form{
+        padding-bottom: 0;
+    }
+
+    .first-name-last-name, .form-username-password{
+        flex-direction: column;
+    }
+
+    .first-name, .form-username,.last-name, .form-password{
+        width:100%;
+    }
+
+    .last-name, .form-password{
+        margin-top:10px;
+    }
 
     h3{
         font-size: 3.1vw;
@@ -754,6 +774,10 @@ select #not-a-choice{
 }
 
 @media screen and (max-width:500px) {
+    #main-container{
+        overflow: auto;
+    }
+
     .input-container{
         width:92%;
     }
@@ -829,9 +853,6 @@ select #not-a-choice{
 }
 
 @media screen and (max-width:400px) {
-    #main-container{
-        overflow: auto;
-    }
 
     .back-button{
         font-size: 35px;
