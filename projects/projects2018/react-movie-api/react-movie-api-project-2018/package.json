@@ -67,7 +67,7 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "homepage": "https://victoryang2017.github.io/projects/projects2018/reactlearning/",
+  "homepage": "https://victoryang2017.github.io/projects/projects2018/react-movie-api/",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
