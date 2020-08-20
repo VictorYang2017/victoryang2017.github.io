@@ -337,6 +337,10 @@ footer{
         width:100%;
     }
 
+    .about-image img{
+        max-width: 800px;
+    }
+
     .about-info h1{
         margin: calc(0.4rem * var(--base-size)) 0;
     }
