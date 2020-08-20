@@ -244,8 +244,6 @@ footer{
 }
 
 .about-image{
-    display: flex;
-    justify-content: center;
     width:45%;
     /* border: 2px solid green; */
 }
