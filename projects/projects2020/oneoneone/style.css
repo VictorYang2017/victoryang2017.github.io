@@ -244,6 +244,8 @@ footer{
 }
 
 .about-image{
+    display: flex;
+    justify-content: center;
     width:45%;
     /* border: 2px solid green; */
 }
@@ -324,6 +326,7 @@ footer{
     }
 
     .hero-info h1{
+        
         font-size: calc(2rem * var(--base-size));
     }
     
@@ -332,12 +335,12 @@ footer{
         font-size: calc(0.8rem * var(--base-size));
     }
 
-    .second-section .section-container{
-        flex-direction: column;
-    }
-
     .about-image, .about-info{
         width:100%;
+    }
+
+    .about-info h1{
+        margin: calc(0.4rem * var(--base-size)) 0;
     }
 
     .article{
