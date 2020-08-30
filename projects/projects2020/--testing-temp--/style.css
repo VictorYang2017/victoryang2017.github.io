@@ -14,7 +14,7 @@
 
 h1{
     margin:0;
-    /* font-family: 'Crimson Text', serif; */
+    font-family: 'Crimson Text', serif;
 
 }
 
@@ -43,7 +43,7 @@ a{
     background-position: center center;
     background-repeat: no-repeat;
 
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
 
 .hero-section::before{
