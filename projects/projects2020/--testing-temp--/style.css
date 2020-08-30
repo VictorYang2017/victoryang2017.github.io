@@ -160,7 +160,7 @@ a{
 
 @media only screen and (min-width: 33.75rem) {
     /* 540px */
-    /* .hero-section .section-container .hero-info .hero-info-btns{
+    .hero-section .section-container .hero-info .hero-info-btns{
         flex-direction: row;
         justify-content: space-around;
     }
@@ -171,12 +171,12 @@ a{
 
     .hero-section .section-container .hero-info .about-me-btn{
         margin-bottom:0;
-    } */
+    }
 }
 
 @media only screen and (min-width: 48rem) {
     /* 768px */
-    /* .hero-section .section-container .hero-info h1{
+    .hero-section .section-container .hero-info h1{
         font-size: 5rem;
     }
 
@@ -193,12 +193,12 @@ a{
         width: 40%;
         padding:0.6rem 1rem;
         font-size: 1.2rem;
-    } */
+    }
 }
 
 @media only screen and (min-width: 56.25rem) {
     /* 900px */
-    /* .hero-section .section-container{
+    .hero-section .section-container{
         width:80%;
     }
     .hero-section .section-container .hero-info h1{
@@ -218,12 +218,12 @@ a{
 
     .hero-section .section-container .hero-info button{
         font-size: 1.5rem;
-    } */
+    }
 }
 
 @media only screen and (min-width: 64rem) {
     /* 1024px */
-    /* .hero-section .section-container header img{
+    .hero-section .section-container header img{
         width: 3.8rem;
     }
 
@@ -255,13 +255,13 @@ a{
 
     .hero-section .section-container header .hero-mobile-nav{
         display: none;
-    } */
+    }
 
 }
 
 @media only screen and (min-width: 87.5rem) {
     /* 1400px */
-    /* .hero-section .section-container .hero-info{
+    .hero-section .section-container .hero-info{
         position: relative;
         overflow: hidden;
     }
@@ -307,12 +307,12 @@ a{
             opacity: 0.9;
             transform: translate(-50%, 20%) rotate(90deg);
         }
-    }; */
+    };
 }
 
 @media only screen and (min-width: 121rem) {
     /* 1936px */
-    /* .hero-section .section-container .hero-info::after{
+    .hero-section .section-container .hero-info::after{
         font-size: 3rem;;
 
     }
@@ -341,13 +341,13 @@ a{
 
     .hero-section .section-container .hero-info button{
         font-size: 1.7rem;
-    } */
+    }
 
 }
 
 @media only screen and (min-width: 161rem) {
     /* 2576px */
-    /* .hero-section .section-container header {
+    .hero-section .section-container header {
         padding-top: 3rem;
     }
 
@@ -392,5 +392,5 @@ a{
         width: 45%;
         padding: 1rem 1rem;
         font-size: 2.5rem;
-    } */
+    }
 }
