@@ -13,11 +13,13 @@
 /* Temp */
 
 h1{
+    margin:0;
     font-family: 'Crimson Text', serif;
 
 }
 
 p{
+    margin:0;
     font-family: 'Lato', sans-serif;
 }
 
@@ -115,7 +117,7 @@ a{
 
 .hero-section .section-container .hero-info h1{
     width:100%;
-    margin-bottom: 0.2rem;
+    /* margin-bottom: 0.2rem; */
     text-align: center;
     font-size: 3.5rem;
     font-weight: bold;
