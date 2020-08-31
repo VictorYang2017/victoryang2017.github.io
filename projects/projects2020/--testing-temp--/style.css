@@ -14,7 +14,7 @@
 
 h1{
     margin:0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Libre Baskerville', serif;
 
 }
 
@@ -119,7 +119,7 @@ a{
 
 .hero-section .section-container .hero-info h1{
     width:100%;
-    /* margin-bottom: 0.2rem; */
+    margin-bottom: 0.2rem;
     text-align: center;
     font-size: 3.5rem;
     font-weight: bold;
@@ -263,6 +263,14 @@ a{
 
 @media only screen and (min-width: 87.5rem) {
     /* 1400px */
+    .hero-section{
+        height: 100vh;
+    }
+    
+    .hero-section::before{
+        height:100vh;
+    }
+
     .hero-section .section-container .hero-info{
         position: relative;
         overflow: hidden;
