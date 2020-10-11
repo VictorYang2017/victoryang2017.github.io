@@ -6,13 +6,13 @@
       "title": "World animal protection",
       "description": "(course assignment)This is a multiple devices responsive wordpress custom theme, the purpose of this website is to make sure that the client(World animal protection) is able to create, remove and update their own contents(which includes text information, images, icons and products).",
       "technologies": [
-        "Wordpress,",
-        "Wordpress Customization API,",
-        "Woocommerce,",
-        "PHP,",
-        "HTML,",
-        "CSS,",
-        "FoundationPress."
+        "Wordpress",
+        "Wordpress Customization API",
+        "Woocommerce",
+        "PHP",
+        "HTML",
+        "CSS",
+        "FoundationPress"
       ],
       "projectSite": "http://victor.yang.wux.yoobee.net.nz/worldanimalprotection/",
       "projectCode": "https://github.com/VictorYang2017/world-animal-protection",
